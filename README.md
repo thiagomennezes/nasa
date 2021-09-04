@@ -1,5 +1,5 @@
-# Nasa
-This is a challenge fo XERPAY.
+# NASA
+This is a challenge for XERPAY.
 
 ## Running the code
 
