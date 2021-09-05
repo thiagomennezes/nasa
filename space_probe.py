@@ -13,7 +13,7 @@ class SpaceProbe:
                 self.__rotate_right()
             elif instruction == 'M':
                 self.__move(highland)
-        print(f"{self.x} {self.y} {self.direction}")
+        return f"{self.x} {self.y} {self.direction}"
 
     def __move(self, highland):
         if self.direction == 'N':

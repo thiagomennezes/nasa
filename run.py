@@ -28,8 +28,15 @@ def read_file():
                 step = GETTING_INITIAL_POINT
     return highland, space_probes
 
+def write_file(content):
+    f = open("output.txt", "w")
+    f.write(content)
+    f.close()
 
 if __name__ == "__main__":
     highland, space_probes = read_file()
+    output = ""
     for probe in space_probes:
-        probe.run(highland)
+        output += probe.run(highland) + "\n"
+    write_file(output)
+    print(output)
